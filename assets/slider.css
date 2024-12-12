@@ -1,0 +1,46 @@
+.slider {
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(100px * 6);
+  animation: scroll 15s linear infinite;
+}
+
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+  margin: 0 2rem;
+  transition: transform 500ms ease-in-out;
+  transition-delay: 300ms;
+}
+
+.slide img {
+  width: 30%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.slide p {
+  margin: 0;
+  padding: 1rem;
+  color: #333;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: 2rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100px * 3));
+  }
+}

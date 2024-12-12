@@ -1,0 +1,62 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 300px;
+  height: 600px;
+  padding: 1em;
+  border: #333 2px dashed;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  filter: invert(1);
+  color: white;
+  border: #333 2px solid;
+}
+
+/*  class container d'image de card avec image en cover */
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Image visible avec hover ________________*/
+
+#ill {
+  width: 300px;
+  position: absolute;
+  transform: rotate(90deg);
+  z-index: 2000;
+  filter: invert(1);
+  display: none;
+}
+
+#eagle {
+  display: none;
+  width: 300px;
+  transform: scaleX(-1); /* ! --NB-- inverse l'axe X de l'image */
+  position: absolute;
+  z-index: 2000;
+}
+#jet {
+  display: none;
+  width: 300px;
+  position: absolute;
+  z-index: 2000;
+  filter: invert(1);
+}
+#ill:hover {
+  display: block;
+}
+
+#eagle:hover {
+  display: block;
+}
+#jet:hover {
+  display: block;
+}
+

@@ -1,0 +1,62 @@
+/* animation bg blanc/noir */
+@keyframes bg {
+  0% {
+    background: #333;
+  }
+  50% {
+    background: #fff;
+  }
+  100% {
+    background: #333;
+  }
+}
+
+/* deplacement d'un element en position absolute de gauche a droite */
+@keyframes move {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* deplacement d'un element en position absolute de droite a gauche */
+@keyframes move2 {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+/* deplacement d'un element en position absolute de haut en bas */
+@keyframes move3 {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/* deplacement d'un element en position absolute de bas en haut */
+@keyframes move4 {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+/* un element en rotation infinie */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
